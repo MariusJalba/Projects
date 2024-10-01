@@ -1,0 +1,55 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Marius/Faculty/CN/CACHE
+vcache_controller
+Z1 !s110 1717150660
+!i10b 1
+!s100 gETA_HPWC8Ym80U`N`BQQ2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1mi^F;?9[LVD@9S16PEmn1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1717150358
+Z5 8Cache_controller.v
+Z6 FCache_controller.v
+!i122 0
+L0 1 177
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1717150660.000000
+!s107 Cache_controller.v|
+Z9 !s90 -reportprogress|300|Cache_controller.v|
+!i113 1
+Z10 tCvgOpt 0
+vtb_cache_controller
+R1
+!i10b 1
+!s100 1L`PA[QEUTmOB4LhgF[D93
+R2
+I_0Dj84;9dQgoA1Nalb0UB1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 181 181
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 Cache_controller.v|
+R9
+!i113 1
+R10

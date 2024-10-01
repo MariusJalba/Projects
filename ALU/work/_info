@@ -1,0 +1,257 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Marius/Faculty/CN/ALU
+vALU
+Z1 !s110 1713433424
+!i10b 1
+!s100 5jRJOePnUI=fdlOofHj_n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I::aWW>KO4K5XdYnThT2Tk2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1713433415
+Z5 8ALU.v
+Z6 FALU.v
+!i122 0
+L0 188 103
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1713433424.000000
+!s107 ALU.v|
+Z9 !s90 -reportprogress|300|ALU.v|
+!i113 1
+Z10 tCvgOpt 0
+n@a@l@u
+vALU_tb
+R1
+!i10b 1
+!s100 `mDGm1BN3km=;K]l93a1N3
+R2
+IUAE[Fz;CmAR>KKmM739702
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 292 23
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 ALU.v|
+R9
+!i113 1
+R10
+n@a@l@u_tb
+vand16
+R1
+!i10b 1
+!s100 67dBa_UeEW`6J_zOK<L011
+R2
+IC`3F?`WSnYRMlQo0R2aS32
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 68 3
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vbooth
+R1
+!i10b 1
+!s100 1BUMj`Rb72;8TB`^LXedj1
+R2
+I<jkG?f]:cdK<jKP<4J@?32
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 161 26
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vdff
+R1
+!i10b 1
+!s100 >JUSG^QmF^M<kEP0clTRb1
+R2
+Im4ORAIQVBUeRSif3SJ5GH2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 80 8
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vFAC
+R1
+!i10b 1
+!s100 g6N1mXh>967mYX@<kZX]10
+R2
+IFzTWb`LKMalRa30S5kZBB3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 32 31
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@f@a@c
+vinv
+R1
+!i10b 1
+!s100 T71Bj^o0SC]2l5A]^Be[12
+R2
+IK@z3H=YJk]Xm5]?`HG<P01
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 76 3
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vNRD
+R1
+!i10b 1
+!s100 3V^4C;h4C7njF7cRB4Igg0
+R2
+I3U79cD8hRV^jU10TQXR__0
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 1 30
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@n@r@d
+vor16
+R1
+!i10b 1
+!s100 PGGib;l?DICnd8QMYW[?f1
+R2
+Ia^NBG1`S<Lo3:ifmPT@:^2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 72 3
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vshift_reg
+R1
+!i10b 1
+!s100 T?HZnCH@5IN0ZXE3SD@DG3
+R2
+I1VaiP7S:PV85YCbTmcSE[0
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 89 72
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vxor16
+R1
+!i10b 1
+!s100 1[FI4Ez2?1[CO:iVOE>Uk3
+R2
+Ie4Ee1:cd]98O9An>?9h=<1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 64 3
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10

@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "current_state[0]",
+					"strict" : false
+				},
+				{
+					"name" : "current_state[1]",
+					"strict" : false
+				},
+				{
+					"name" : "current_state[2]",
+					"strict" : false
+				},
+				{
+					"name" : "exprr",
+					"strict" : false
+				},
+				{
+					"name" : "expr_l",
+					"strict" : false
+				},
+				{
+					"name" : "capp",
+					"strict" : false
+				},
+				{
+					"name" : "coffee[0]",
+					"strict" : false
+				},
+				{
+					"name" : "coffee[1]",
+					"strict" : false
+				},
+				{
+					"name" : "credit10",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "credit05",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

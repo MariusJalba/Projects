@@ -1,0 +1,29 @@
+module inv(input [15:0] a, output [15:0] y);
+    assign y = ~a;
+endmodule
+module inv_tb;
+    reg [15:0] a;
+    wire [15:0] y;
+    inverter16 inst (
+        .a(a), 
+        .y(y)
+    );
+
+    initial begin
+        a = 16'h0000;
+        #100;
+        a = 16'hFFFF;
+        #100;
+        
+        a = 16'hAAAA;
+        #100;
+        
+        a = 16'h5555;
+        #100
+        $finish;
+    end
+
+    initial begin
+        $monitor("At time %dns, a = %b, y = %b", $time, a, y);
+    end
+endmodule

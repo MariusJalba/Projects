@@ -1,0 +1,31 @@
+# Set the source files
+set sourcefiles {"NRD1.v" "SHIFT_REG.v"}
+
+# Set the top module
+set topmodule NRD_tb
+
+# Quit simulation if already running
+quit -sim
+
+# Remove existing work library
+if {[file exists "work"]} {
+    vdel -all
+}
+
+# Create a new work library
+vlib work
+
+# Compile the source files
+if {[catch {eval vlog $sourcefiles}]} {
+    puts "Error: Compilation failed. Please correct the errors."
+    return
+}
+
+# Start simulation
+vsim -voptargs=+acc $topmodule
+
+# Add waves
+add wave *
+
+# Run simulation
+run -all

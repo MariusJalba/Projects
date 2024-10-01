@@ -1,0 +1,59 @@
+module NRD(
+    input [15:0] dividend,  // Dividend
+    input [15:0] divisor,   // Divisor
+    output reg [15:0] r,     // Remainder
+    output reg [15:0] q      // Quotient
+);
+
+integer i;
+reg [15:0] A, M, Q;
+
+always @* begin
+    A = 16'b0;  
+    M = divisor;
+    Q = dividend;
+
+    for (i = 0; i < 16; i = i + 1) begin
+        {A, Q} = {A, Q} << 1;
+        A = A - M;
+        if (A[15] == 1'b1) begin 
+            Q[0] = 1'b0;
+            A = A + M;  
+        end else begin  
+            Q[0] = 1'b1; 
+        end
+    end
+    
+    // Assign outputs
+    r = A;
+    q = Q;
+end
+
+endmodule
+
+module NRD_tb;
+    reg [15:0] dividend;
+    reg [15:0] divisor;
+    wire [15:0] r;
+    wire [15:0] q;
+
+    // Instantiate the RestoringDivision module
+    NRD uut (
+        .dividend(dividend),
+        .divisor(divisor),
+        .r(r),
+        .q(q)
+    );
+
+    initial begin
+        // Initialize inputs
+        divisor = 16'b0001010010110100;
+        dividend = 16'b0000000001000011;
+
+        // Wait for 100 ns for the design to settle
+        #100;
+        // Display outputs
+        $display("At time %d, r = %b, q = %b", $time, r, q);
+    end
+endmodule
+

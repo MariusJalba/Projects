@@ -1,0 +1,43 @@
+|coffee_fsm
+clk => state_reg~1.DATAIN
+rst => state_reg~3.DATAIN
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.OUTPUTSELECT
+credit05 => state_nxt.DATAA
+credit05 => state_nxt.DATAA
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => state_nxt.OUTPUTSELECT
+credit10 => Selector2.IN5
+coffee[0] => Equal0.IN0
+coffee[0] => Equal1.IN31
+coffee[0] => Equal2.IN1
+coffee[1] => Equal0.IN31
+coffee[1] => Equal1.IN0
+coffee[1] => Equal2.IN0
+current_state[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+current_state[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+current_state[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+exprr <= exprr.DB_MAX_OUTPUT_PORT_TYPE
+expr_l <= expr_l.DB_MAX_OUTPUT_PORT_TYPE
+capp <= capp.DB_MAX_OUTPUT_PORT_TYPE
+
+

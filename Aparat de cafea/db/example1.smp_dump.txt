@@ -1,0 +1,11 @@
+
+State Machine - |coffee_fsm|state_reg
+Name state_reg.111 state_reg.110 state_reg.101 state_reg.100 state_reg.011 state_reg.010 state_reg.001 state_reg.000 
+state_reg.000 0 0 0 0 0 0 0 0 
+state_reg.001 0 0 0 0 0 0 1 1 
+state_reg.010 0 0 0 0 0 1 0 1 
+state_reg.011 0 0 0 0 1 0 0 1 
+state_reg.100 0 0 0 1 0 0 0 1 
+state_reg.101 0 0 1 0 0 0 0 1 
+state_reg.110 0 1 0 0 0 0 0 1 
+state_reg.111 1 0 0 0 0 0 0 1 

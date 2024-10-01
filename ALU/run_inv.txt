@@ -1,0 +1,12 @@
+set sourcefiles {inv.v}
+set topmodule inv_tb
+quit -sim
+if [file exists "work"] {vdel -all}
+vlib work
+if [catch "eval vlog $sourcefiles"] {
+    puts "correct the compilation errors"
+    return
+}
+vsim -voptargs=+acc $topmodule
+add wave *
+run -all
