@@ -1,0 +1,58 @@
+Commands: 100
+Serial Time:1.199587 seconds
+MPI Time:
+processes = 5
+0.985 seconds
+processes = 10
+0.686 seconds
+processes = 20
+0.699 seconds
+processes = 30
+0.680 seconds
+processes = 40
+0.704 seconds
+
+Commands: 200
+Serial Time:4.847378 seconds
+MPI_Time:
+processes = 5
+6.797 seconds
+processes = 10
+3.117 seconds
+processes = 20
+2.965 seconds
+processes = 30
+2.922 seconds
+processes = 40
+2.523 seconds
+
+Comands:300
+Serial Time:9.245931 seconds
+MPI_Time:
+processes = 5
+9.522 seconds
+processes = 10
+5.502 seconds
+processes = 20
+5.221 seconds
+processes = 30
+3.884 seconds
+processes = 40
+4.676 seconds
+
+For all test cases MPI improves performance compared to serial when number of processes is moderate to high.
+However overhead of parallelization is evident when the number of Commands is small or the number of processes is low.
+For number of commands = 100, the performance drops beyond 10 processes or there is no significant improvement because the workload is too small 
+to offset communication overhead.
+For number of commands = 200, at 5 processes the performance is worse due to communication overhead, improvement becomes significant at
+10 to 40 processes, the best performance is at 40 but the performance gains are little.
+For number of commands = 300, at 5 processes again MPI is worse than serial execution, the optimal performance occurs at 30 processes with 3.884 seconds, 
+performance declines slightly at 40 which shows that too much parallelization degrades the execution times by a lot.
+
+In conclusion small workloads do not benefit a lot from parallelization, for moderate and large workloads MPI improves performance when the number
+of processes is between 10 and 30 and adding too many processes can lead to performance degradation especially for workloads 
+that do not scale well with parallel reources, this means that number of workers needs to be experimented on in order to avoid communication overhead.
+The way in which data is sent also affects speed of program it is better to send data in batches because the program takes more time receiving than computing results.
+In my example I also tend to think that operations on files like opening, closing and writing which add time to the execution, the same can be said 
+about malloc and realloc which are considered expensive operations.In the end the machine on which the program is being executed also affects the
+execution times and performance of MPI communication.

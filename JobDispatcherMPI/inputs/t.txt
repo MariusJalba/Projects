@@ -1,0 +1,4 @@
+CLI0 MATRIXADD 10 matrix1.txt matrix2.txt
+CLI1 MATRIXMULT 10 matrix1.txt matrix2.txt
+CLI1 MATRIXMULT 4 matrix1.txt matrix2.txt
+CLI0 MATRIXADD 4 matrix1.txt matrix2.txt

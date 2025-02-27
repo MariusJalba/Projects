@@ -1,0 +1,2 @@
+CLI0 MATRIXADD 2 matrix1.txt matrix2.txt
+CLI1 MATRIXMULT 2 matrix1.txt matrix2.txt
